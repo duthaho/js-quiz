@@ -12,7 +12,7 @@ const Bio = () => {
       }}
     >
       <p>
-        Cùng nhau luyện tập kỹ năng Javascript - 1977 câu hỏi xoáy đáp xoay với <a href="https://duthaho.com">duthaho</a> nào!
+        Cùng nhau luyện tập kỹ năng Javascript - 1977 câu hỏi xoáy đáp xoay với <a href="https://duthaho.com">duthaho</a>!
       </p>
     </div>
   );

@@ -1,8 +1,10 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { Link } from 'gatsby';
-import { rhythm, scale } from '../utils/typography';
-import { Divider } from 'semantic-ui-react';
 import GitHubButton from 'react-github-btn';
+import { Divider, Button } from 'semantic-ui-react';
+import { ClearAnswerModal } from './modal';
+import { rhythm, scale } from '../utils/typography';
+import { clearAllPersistedAnswer } from '../utils/persistAnswers';
 
 const Layout = props => {
   const headerRef = useRef();
@@ -14,6 +16,13 @@ const Layout = props => {
     location.pathname !== '/' &&
       headerRef.current.scrollIntoView();
   }, [location]);
+
+  const clearAnswer = () => {
+    clearAllPersistedAnswer();
+    window.location.reload();
+    return false;
+  };
+  const [isOpen, openClear] = useState(false);
 
   if (location.pathname === rootPath) {
     header = (
@@ -72,6 +81,13 @@ const Layout = props => {
       <header>{header}</header>
 
       <main ref={headerRef}>{children}</main>
+
+      {
+        location.pathname === rootPath && <div style={{ textAlign: 'center' }}>
+          <Button className="ui red basic button" onClick={() => openClear(true)}>Xóa dữ liệu</Button>
+          <ClearAnswerModal modalIsOpen={isOpen} clearAnswer={() => openClear(clearAnswer())} closeModal={() => openClear(false)} />
+        </div>
+      }
 
       <footer style={{ fontSize: '14px' }}>
         <Divider />

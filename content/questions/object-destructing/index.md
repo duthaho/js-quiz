@@ -1,7 +1,7 @@
 ---
-title: String Operations and Array Destructuring
+title: Object Destructuring
 tags:
-  - string
+  - array
   - destructuring
 order: 5
 date: '2019-11-20'
@@ -24,8 +24,6 @@ console.log(domain);
 ```
 
 <!-- explanation -->
-
-Chúng ta sẽ đi lần lượt từng phần để hiểu rõ hơn.
 
 Đấu tiên gán `quiz.duthaho.com` cho biến `url`.
 
