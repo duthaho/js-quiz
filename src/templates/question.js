@@ -30,7 +30,6 @@ const QuestionTemplate = props => {
   const [postContent, explanationContent] = post.html.split(
     '<!-- explanation -->'
   );
-  const siteTitle = props.data.site.siteMetadata.title;
   const { previous, next } = props.pageContext;
 
   let correct;
@@ -66,7 +65,7 @@ const QuestionTemplate = props => {
         : 'Cố gắng hơn nhé!';
 
   return (
-    <Layout location={props.location} title={siteTitle}>
+    <Layout location={props.location} siteMetadata={props.data.site.siteMetadata}>
       <SEO
         title={post.frontmatter.title}
         description={post.excerpt}
@@ -211,6 +210,12 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         author
+        siteUrl
+        social {
+          facebook {
+            appId
+          }
+        }
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {

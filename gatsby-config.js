@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 module.exports = {
   siteMetadata: {
     title: `1977 JavaScript Quizzes`,
@@ -6,7 +8,9 @@ module.exports = {
     siteUrl: `https://quiz.duthaho.com`,
     image: '/js-quiz.jpeg',
     social: {
-      twitter: `nas5w`
+      facebook: {
+        appId: process.env.FB_APP_ID || ''
+      }
     }
   },
   plugins: [

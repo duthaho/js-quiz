@@ -11,7 +11,6 @@ import './index.css';
 
 const BlogIndex = props => {
   const { data } = props;
-  const siteTitle = data.site.siteMetadata.title;
   const posts = data.allMarkdownRemark.edges;
 
   useEffect(() => {
@@ -19,7 +18,10 @@ const BlogIndex = props => {
   }, []);
 
   return (
-    <Layout location={props.location} title={siteTitle}>
+    <Layout
+      location={props.location}
+      siteMetadata={data.site.siteMetadata}
+    >
       <SEO title="duthaho" />
       <Bio />
       <Divider />
@@ -39,10 +41,10 @@ const BlogIndex = props => {
                   <i className="check circle icon"></i>
                 </span>
               ) : (
-                  <span style={{ color: 'red' }}>
-                    <i className="times circle icon"></i>
-                  </span>
-                );
+                <span style={{ color: 'red' }}>
+                  <i className="times circle icon"></i>
+                </span>
+              );
           }
           return (
             <li key={node.fields.slug}>
@@ -72,6 +74,12 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        siteUrl
+        social {
+          facebook {
+            appId
+          }
+        }
       }
     }
     allMarkdownRemark(

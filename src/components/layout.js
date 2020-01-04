@@ -2,13 +2,19 @@ import React, { useRef, useEffect, useState } from 'react';
 import { Link } from 'gatsby';
 import GitHubButton from 'react-github-btn';
 import { Divider, Button } from 'semantic-ui-react';
+import {
+  FacebookProvider,
+  Comments,
+  ShareButton
+} from 'react-facebook';
+
 import { ClearAnswerModal } from './modal';
 import { rhythm, scale } from '../utils/typography';
 import { clearAllPersistedAnswer } from '../utils/persistAnswers';
 
 const Layout = props => {
   const headerRef = useRef();
-  const { location, title, children } = props;
+  const { location, children, siteMetadata } = props;
   const rootPath = `${__PATH_PREFIX__}/`;
   let header;
 
@@ -44,7 +50,7 @@ const Layout = props => {
           }}
           to={`/`}
         >
-          {title}
+          {siteMetadata.title}
         </Link>
       </h1>
     );
@@ -64,7 +70,7 @@ const Layout = props => {
           }}
           to={`/`}
         >
-          {title}
+          {siteMetadata.title}
         </Link>
       </h3>
     );
@@ -82,12 +88,33 @@ const Layout = props => {
 
       <main ref={headerRef}>{children}</main>
 
-      {
-        location.pathname === rootPath && <div style={{ textAlign: 'center' }}>
-          <Button className="ui red basic button" onClick={() => openClear(true)}>Xóa dữ liệu</Button>
-          <ClearAnswerModal modalIsOpen={isOpen} clearAnswer={() => openClear(clearAnswer())} closeModal={() => openClear(false)} />
-        </div>
-      }
+      <div style={{ textAlign: 'center' }}>
+        {location.pathname === rootPath && (
+          <>
+            <Button
+              className="ui red basic button"
+              onClick={() => openClear(true)}
+            >
+              Xóa dữ liệu
+            </Button>
+            <ClearAnswerModal
+              modalIsOpen={isOpen}
+              clearAnswer={() => openClear(clearAnswer())}
+              closeModal={() => openClear(false)}
+            />
+          </>
+        )}
+        <FacebookProvider
+          appId={siteMetadata.social.facebook.appId}
+        >
+          <ShareButton
+            className="ui green basic button"
+            href={siteMetadata.siteUrl}
+          >
+            Chia sẻ cho bạn bè!
+          </ShareButton>
+        </FacebookProvider>
+      </div>
 
       <footer style={{ fontSize: '14px' }}>
         <Divider />
@@ -102,6 +129,14 @@ const Layout = props => {
             Tặng sao nào!
           </GitHubButton>
         </p>
+        <FacebookProvider
+          appId={siteMetadata.social.facebook.appId}
+        >
+          <Comments
+            href={`${siteMetadata.siteUrl}/${location.pathname}`}
+            width="100%"
+          />
+        </FacebookProvider>
       </footer>
     </div>
   );
