@@ -2,7 +2,6 @@
 title: Typeof
 tags:
   - typeof
-order: 24
 date: '2019-11-23'
 answers:
   - 'object array number'

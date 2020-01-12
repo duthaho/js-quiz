@@ -3,7 +3,6 @@ title: Bind - Call
 tags:
   - bind
   - call
-order: 19
 date: '2019-11-22'
 answers:
   - 'undefined is 69 duthaho is 69'

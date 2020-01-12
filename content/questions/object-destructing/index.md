@@ -3,7 +3,6 @@ title: Object Destructuring
 tags:
   - array
   - destructuring
-order: 5
 date: '2019-11-20'
 answers:
   - '"quiz"'

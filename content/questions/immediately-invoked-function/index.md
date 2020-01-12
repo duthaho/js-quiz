@@ -2,7 +2,6 @@
 title: Immediately Invoked Function
 tags:
   - IIFE
-order: 20
 date: '2019-11-22'
 answers:
   - 'object'

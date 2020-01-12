@@ -3,7 +3,6 @@ title: Object String Keys
 tags:
   - object
   - keys
-order: 16
 date: '2019-11-22'
 answers:
   - 'false true false true'

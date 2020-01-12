@@ -3,7 +3,6 @@ title: Object Values
 tags:
   - object
   - values
-order: 35
 date: '2019-11-23'
 answers:
   - 'hello // correct'

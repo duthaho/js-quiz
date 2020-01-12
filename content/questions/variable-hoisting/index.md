@@ -2,7 +2,6 @@
 title: Variable Hoisting
 tags:
   - hoisting
-order: 31
 date: '2019-11-23'
 answers:
   - '5 10'

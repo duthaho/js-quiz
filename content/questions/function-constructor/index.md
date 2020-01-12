@@ -3,7 +3,6 @@ title: Function Constructor
 tags:
   - function
   - constructor
-order: 15
 date: '2019-11-22'
 answers:
   - 'Person {firstName: "du", lastName: "ti"} undefined // correct'

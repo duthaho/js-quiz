@@ -3,7 +3,6 @@ title: Promise Race
 tags:
   - promise
   - race
-order: 43
 date: '2019-11-24'
 answers:
   - 'Hello'

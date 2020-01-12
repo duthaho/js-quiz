@@ -2,7 +2,6 @@
 title: Set Timeout
 tags:
   - setTimeout
-order: 29
 date: '2019-11-23'
 answers:
   - '1, 2, 3, 4'

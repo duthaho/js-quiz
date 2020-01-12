@@ -3,7 +3,6 @@ title: Template Literals
 tags:
   - truthy
   - template literals
-order: 37
 date: '2019-11-23'
 answers:
   - 'Soon we must all choose between what is right and what is easy // correct'
@@ -24,4 +23,4 @@ console.log(output);
 
 <!-- explanation -->
 
-Trong Javascript, mảng rỗng `[]` và function là `truthy`. Nhưng chú ý ở ví dụ trên, function này được thực thi và nó trả về `false`.
+Trong JavaScript, mảng rỗng `[]` và function là `truthy`. Nhưng chú ý ở ví dụ trên, function này được thực thi và nó trả về `false`.

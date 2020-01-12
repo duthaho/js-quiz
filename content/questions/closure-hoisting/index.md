@@ -3,7 +3,6 @@ title: Closure - Hoisting
 tags:
   - closure
   - hoisting
-order: 22
 date: '2019-11-23'
 answers:
   - 'undefined Error 42'

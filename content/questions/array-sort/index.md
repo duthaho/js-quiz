@@ -3,7 +3,6 @@ title: Array Sort
 tags:
   - array
   - sort
-order: 10
 date: '2019-11-21'
 answers:
   - true true true

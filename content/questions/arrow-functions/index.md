@@ -3,7 +3,6 @@ title: Arrow Functions
 tags:
   - arrow functions
   - binding
-order: 21
 date: '2019-11-23'
 answers:
   - 'Border Collie, Wooh'

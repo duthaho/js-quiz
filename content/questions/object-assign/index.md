@@ -3,7 +3,6 @@ title: Object Assign
 tags:
   - object
   - assign
-order: 40
 date: '2019-11-24'
 answers:
   - 'Joe Nested aReturn'

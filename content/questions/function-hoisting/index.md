@@ -2,7 +2,6 @@
 title: Function Hoisting
 tags:
   - hoisting
-order: 32
 date: '2019-11-23'
 answers:
   - 'second first 1 3'
@@ -47,7 +46,7 @@ foo();
 
 <!-- explanation -->
 
-Cơ chế `hoisting` trong Javascript được áp đụng khi khai báo biến (`variable declaration`) và khai báo function (`function declaration`), trừ khi gán một function cho biến (`function expression`).
+Cơ chế `hoisting` trong JavaScript được áp đụng khi khai báo biến (`variable declaration`) và khai báo function (`function declaration`), trừ khi gán một function cho biến (`function expression`).
 
 Function declaration sẽ có độ ưu tiên hơn variable declaration khi `hoisting`, vì thế function `bar` sau khi `hoisted` sẽ giống thế này:
 

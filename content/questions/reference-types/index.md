@@ -3,7 +3,6 @@ title: Reference Types
 tags:
   - reference
   - types
-order: 38
 date: '2019-11-23'
 answers:
   - '1'

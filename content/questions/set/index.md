@@ -2,7 +2,6 @@
 title: Set
 tags:
   - set
-order: 1
 date: '2019-11-20'
 answers:
   - '[{a: 1}, {a: 1}] // correct'

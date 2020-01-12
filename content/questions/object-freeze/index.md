@@ -3,7 +3,6 @@ title: Object Freeze
 tags:
   - object
   - freeze
-order: 27
 date: '2019-11-23'
 answers:
   - 'shiba // correct'

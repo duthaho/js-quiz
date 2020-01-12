@@ -4,7 +4,6 @@ tags:
   - function
   - array
   - loop
-order: 6
 date: '2019-11-21'
 answers:
   - 'Yes'

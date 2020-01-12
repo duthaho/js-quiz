@@ -4,7 +4,6 @@ tags:
   - object
   - object.keys
   - object.values
-order: 42
 date: '2019-11-24'
 answers:
   - '[1, 2, 3] ["1", "2", "3"]'

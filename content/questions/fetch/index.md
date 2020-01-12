@@ -2,7 +2,6 @@
 title: Fetch
 tags:
   - fetch
-order: 25
 date: '2019-11-23'
 answers:
   - 'The fetch function'

@@ -2,7 +2,6 @@
 title: Operation Precedence
 tags:
   - operation precedence
-order: 39
 date: '2019-11-23'
 answers:
   - '44 4'

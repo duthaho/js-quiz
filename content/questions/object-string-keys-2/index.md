@@ -3,7 +3,6 @@ title: Object String Keys 2
 tags:
   - object
   - keys
-order: 18
 date: '2019-11-22'
 answers:
   - '123'

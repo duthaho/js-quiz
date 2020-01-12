@@ -4,7 +4,6 @@ tags:
   - null
   - undefined
   - NaN
-order: 33
 date: '2019-11-23'
 answers:
   - 'true true true true'
@@ -27,4 +26,4 @@ console.log(compare([NaN]));
 
 <!-- explanation -->
 
-Trong Javascript, khi sử dụng Triple Equals (`===`) thì `null` và `undefined` chỉ cho kết quả `true` khi so sánh với chính nó, `NaN` thì luôn cho kết quả `false` khi so sánh với bất kỳ object nào, kể cả chính nó, còn `[NaN]` là một array bình thường chỉ chứa một phần tử là `NaN`.
+Trong JavaScript, khi sử dụng Triple Equals (`===`) thì `null` và `undefined` chỉ cho kết quả `true` khi so sánh với chính nó, `NaN` thì luôn cho kết quả `false` khi so sánh với bất kỳ object nào, kể cả chính nó, còn `[NaN]` là một array bình thường chỉ chứa một phần tử là `NaN`.

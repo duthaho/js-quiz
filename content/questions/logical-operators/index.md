@@ -2,7 +2,6 @@
 title: Logical Operators
 tags:
   - short-circuit
-order: 36
 date: '2019-11-23'
 answers:
   - 'You have 1 notification'

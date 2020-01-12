@@ -4,7 +4,6 @@ tags:
   - floating-point
   - decimal
   - rounding
-order: 30
 date: '2019-11-23'
 answers:
   - 'true'

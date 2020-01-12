@@ -3,7 +3,6 @@ title: Object Duplicate Keys
 tags:
   - object
   - keys
-order: 17
 date: '2019-11-22'
 answers:
   - '{a: "one", b: "two" }'

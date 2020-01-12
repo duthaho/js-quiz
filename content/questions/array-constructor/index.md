@@ -3,7 +3,6 @@ title: Array Constructor
 tags:
   - array
   - constructor
-order: 8
 date: '2019-11-21'
 answers:
   - '5'

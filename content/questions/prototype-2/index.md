@@ -2,7 +2,6 @@
 title: Prototype 2
 tags:
   - prototype
-order: 46
 date: '2019-11-24'
 answers:
   - 'woof // correct'

@@ -3,7 +3,6 @@ title: Array Reduce 2
 tags:
   - reduce
   - array
-order: 34
 date: '2019-11-23'
 answers:
   - '1'

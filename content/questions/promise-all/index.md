@@ -3,7 +3,6 @@ title: Promise All
 tags:
   - promise
   - all
-order: 44
 date: '2019-11-24'
 answers:
   - '["first", "second"] // correct'

@@ -3,7 +3,6 @@ title: Arrays Reverse
 tags:
   - array
   - reverse
-order: 11
 date: '2019-10-08'
 answers:
   - '[1, 3, 5, 7, 25]
