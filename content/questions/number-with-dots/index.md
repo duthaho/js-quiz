@@ -10,7 +10,7 @@ answers:
   - 'Syntax error'
 ---
 
-What is the return of the following `console.log`?
+Kết quả là gì?
 
 ```javascript
 const n = 5;

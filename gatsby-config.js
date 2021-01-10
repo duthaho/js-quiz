@@ -1,6 +1,7 @@
 require('dotenv').config();
 
 module.exports = {
+  pathPrefix: 'js-quiz',
   siteMetadata: {
     title: `1977 JavaScript Quizzes`,
     author: `duthaho`,
